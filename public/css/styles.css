@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
+
+body{
+    background-color: rgb(168, 5, 119);
+    font-family: 'Monda', sans-serif;
+    max-width: 650px;
+    margin:0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content{
+    flex-grow: 1;
+    
+}
+h1{
+    color: cyan;
+    font-size: 45px;
+}
+
+p{
+    color: cyan;
+    font-size: 1.5em;
+}
+#message-1, #message-2{
+    font-size: 1.2em;
+}
+img{
+    height: 45vh;
+}
+a, button{
+    text-decoration: none;
+    color: rgb(168, 5, 119);
+    background-color: rgb(34, 219, 219);
+    padding: 7px;
+    margin: 2px;
+    border-radius: 5%;
+    border: none;
+    
+
+}
+button{
+    cursor:grab;
+}
+a:hover{
+    background-color: rgb(248, 133, 204);
+    color: aqua;
+}
+
+button:hover{
+    background-color: rgb(248, 133, 204);
+    color: aqua;
+}
+footer{
+    border-top: 1px dotted rgb(248, 133, 204);
+    margin-top: 12px;
+    padding: 14px;
+    background-color: rgb(138, 4, 98);
+    color:rgb(2, 250, 167)
+}
+header{
+    margin: 12px 0px;
+    padding: 14px;
+    background-color: rgb(138, 4, 98);
+    
+}
