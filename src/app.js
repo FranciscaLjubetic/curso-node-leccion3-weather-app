@@ -54,7 +54,7 @@ app.get('/about', (req, res)=>{
 app.get('/weather', (req, res)=>{
     if(!req.query.address){
         return res.send({
-            error: 'You must provide an address whose weather to look for'
+            error: 'You must provide an address to look for'
         })
     } 
     geocode(req.query.address, (error, {latitude, longitude, location} = {}) => {
@@ -80,7 +80,7 @@ app.get('/weather', (req, res)=>{
 app.get('/help', (req, res)=>{
     res.render('help',{
         title: 'Help',
-        help_message: 'This is a help message, if you have some question, ask God because this is nothing else than a nice lorem ipsum',
+        help_message: 'This is a help message, if you have some question, ask God, because this is nothing else than a nice lorem ipsum.',
         nombre : 'Fran L'
     })
 })

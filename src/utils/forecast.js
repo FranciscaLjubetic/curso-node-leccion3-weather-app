@@ -5,11 +5,11 @@ const forecast = (latitude, longitude, callback) => {
     request({url: url, json:true}, (error, { body })=>{
 //{body} es un destructuring de response.body
         if(error){
-            callback('Unable to connect with the server!', undefined)
+            callback('Unable to connect with the server! 😬 ', undefined)
         } else if(body.error){
-            callback('Unable to find location', undefined)
+            callback('Unable to find location 🙃', undefined)
         } else{
-            callback(undefined, body.current.weather_descriptions[0] +'. It is currently ' + body.current.temperature + 'C degrees out. there is a ' +body.current.feelslike + 'C  degrees sensation and a ' +body.current.precip + '% chance of rain.')
+            callback(undefined, body.current.weather_descriptions[0] +'. It is currently ' + body.current.temperature + 'ºC out. There is a ' +body.current.feelslike + 'ºC sensation and a ' +body.current.precip + '% chance of rain.')
         }
     })
 }
