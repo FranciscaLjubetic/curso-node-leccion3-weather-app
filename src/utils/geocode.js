@@ -15,7 +15,7 @@ const geocode =(address, callback) => {
 
         }
         catch(error){
-                callback('Unable to find location. Please, try another search.')
+                callback('Unable to find location. Please, try another search. 😬 ')
                 return;
         }
         
