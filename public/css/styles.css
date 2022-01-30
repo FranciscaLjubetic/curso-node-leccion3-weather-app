@@ -28,7 +28,9 @@ p{
     font-size: 1.2em;
 }
 img{
-    height: 45vh;
+    height: 43vh;
+    margin: 0px;
+    padding: 0px;
 }
 a, button{
     text-decoration: none;
@@ -58,7 +60,7 @@ footer{
     margin-top: 12px;
     padding: 14px;
     background-color: rgb(138, 4, 98);
-    color:rgb(2, 250, 167)
+    color:rgb(235, 2, 145)
 }
 header{
     margin: 12px 0px;
